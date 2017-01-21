@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_0f1a55230e538c56002912cb79571b6fab26841d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.0_cd2378ba22fafe075beb6ffedc82c69855004f88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_5996b1cdb6069f1c00e08dc3e1cea8d5a49eb080\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_f50e93b2c16fe8359de99498c259e84b49b69a5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_09f69be70d83a856827d8a41e7b7af91ab107016\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.0.0_8574a4f77d6423256164c8bf183a16f301f64727\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3416ffa5a3db249141ec2136bcca013115fb7fcd">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_64b73b5859c8c6df4f9688573e17689ad019f221\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.0_b92b6b60fc621f3f7e4cdc8a58d1c57b8e34cf01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_6f0aaaa208714c1cff649cd5a90a1c7feefb9a4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.0_ace25c53c7bb3fb88e5de00166fc280f7a697188\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a846ddbf5bf88dee5f89d4dffe22c864f576d9b0">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.zhanghai.android.materialprogressbar-library-1.3.0_6689f30f43ed5bb850dab5324e5910b8fbd1f2c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="67355078cd30daae43f62ba47a4663ee6edb976e">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_af53b36cf925894853009e71c6cf2a5ecade2d3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_5724e252c5e47430262fdb620410a20fcb053e74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_44bb5042337db2a67b21295427b9997f286883f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_ba8b9560f070006a454a696568e7e5920a38dcbe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_42956fea7e4b302da9dd0729b8349b22b52aeb13\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_714323f92c1e25e567f1c10d325b5000d5d92e41\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_fb412e52149ae42c1b7a0724301a716cb4df8f23\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.afollestad\easyvideoplayer\0.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7c9ef64fc4b3c21a9b584017a93d7fe739ae711a">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.afollestad-easyvideoplayer-0.3.0_1d3d07d8dd9d2489c3ef1b7a2813311e35ed5e12\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.0_bde61ca4a1ab3e043ceb2ed5e2ad7bca119c43e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.afollestad\material-camera\0.4.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="175f726550290c1b2d325df9d5aa79ef96ed0498">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.afollestad-material-camera-0.4.4_25dda10535db4678dd6d12d3b25d74f78d94e815\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_ad8df6b2acecb206929bb933722302ed7289834c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_e9fcba2e34950155614e1f275a14d872476d7ea5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.0_28808b32042583b020589e61a64da85fed5cc10d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_4669939f017caaca51e84109fdf56e26f6bd2e0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_642cfbb4c0b23a3bb10552077428c6142404ba90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.afollestad.material-dialogs\core\0.9.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="16795a75616fe3ba9df9ae4af09202145e3a26dc">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.afollestad.material-dialogs-core-0.9.1.0_adec5fea619b60a9dfb941f4f64a6bc832b94f94\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d92b4ec45752d601d20d44c451e7add50713a022">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0a4e08b19212a479bb5a66b40beef0f8d9b3f616\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_df9fd76d362020af64f48a2d2b4ccb5a6723bd32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ac094121e75b4b87432beb9305d70c68ec6dcab">
+        <dex dex="C:\Users\Jacob\Desktop\ski\ski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.0.0_8000f89e6152306583f62b4ddd97c73707db6700\classes.dex" />
+    </item>
+
+</items>
