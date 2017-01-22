@@ -19,11 +19,18 @@
             android:paddingEnd="@dimen/activity_horizontal_margin"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:weightSum="1">
+
+            <Button
+                android:text="Previous"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPrevious" />
 
             <Button
                 android:text="Next"
-                android:layout_width="match_parent"
+                android:layout_width="158dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnNext" />
 

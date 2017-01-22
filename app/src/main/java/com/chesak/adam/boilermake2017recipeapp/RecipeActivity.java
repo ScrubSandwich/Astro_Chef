@@ -17,6 +17,7 @@ public class RecipeActivity extends AppCompatActivity {
     public Reader reader;
 
     private Button btnNext;
+    private Button btnPrevious;
 
     public int currentLine = -1;
 
@@ -25,6 +26,7 @@ public class RecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
         btnNext = (Button) findViewById(R.id.btnNext);
+        btnPrevious = (Button) findViewById(R.id.btnPrevious);
 
         appContext = getApplicationContext();
         reader = new Reader(appContext);
@@ -59,6 +61,17 @@ public class RecipeActivity extends AppCompatActivity {
                 readLine(textArray);
             }
         });
+
+        btnPrevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (currentLine >-1){
+                    currentLine--;
+                    readLine(textArray);
+                }
+            }
+        });
+
     }
 
     public String[] breakTextIntoArray(String text){
