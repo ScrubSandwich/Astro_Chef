@@ -2,11 +2,13 @@ package com.chesak.adam.boilermake2017recipeapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,6 +23,8 @@ public class RecipeActivity extends AppCompatActivity {
     private Button btnListen;
     private String[] textArray;
     public int currentLine = -1;
+
+    TextView[] textViews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,18 +42,21 @@ public class RecipeActivity extends AppCompatActivity {
         String text = (String) intent.getSerializableExtra("text");
 
         setTitle(recipe.getTitle());
-
-        TextView ingredientsText = (TextView) findViewById(R.id.recipe_ingredients);
-        TextView dataText = (TextView) findViewById(R.id.recipe_data);
-
-        //set the following control to the text from the bitmap, not the hardcoded values
-
-//        ingredientsText.setText(recipe.getIngredientsString());
-//        dataText.setText(recipe.getStepsString());
-        ingredientsText.setText("Figure out someway to differentiate the ingredients from the steps. <RecipeActivity.java> \n");
-        dataText.setText(text);
+        TextView titleText = (TextView)findViewById(R.id.recipe_title);
+        titleText.setText(recipe.getTitle());
 
         this.textArray = breakTextIntoArray(text);
+
+        int size = textArray.length;
+
+        textViews = new TextView[size];
+        LinearLayout mainLayout = (LinearLayout) findViewById(R.id.main_layout);
+        for (int i = 0; i < size; i++){
+            textViews[i] = new TextView(this);
+            textViews[i].setText(textArray[i]);
+            textViews[i].setTextColor(0xFFBCBCBC);
+            mainLayout.addView(textViews[i]);
+        }
 
         //when an <ACTION> occures, read a line
         //an action will be a button for now, but should ultimately be the voice command "Next"
@@ -58,6 +65,12 @@ public class RecipeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (currentLine < textArray.length - 1) {
                     currentLine++;
+                    textViews[currentLine].setTextColor(0xFF000000);
+                    textViews[currentLine].setTypeface(null, Typeface.BOLD);
+                    if (currentLine >= 1){
+                        textViews[currentLine - 1].setTextColor(0xFFBCBCBC);
+                        textViews[currentLine - 1].setTypeface(null, Typeface.NORMAL);
+                    }
                     reader.speak(textArray[currentLine]);
                 } else {
                     reader.speak("You have finished cooking ");
@@ -69,6 +82,12 @@ public class RecipeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (currentLine > 0) {
                     currentLine--;
+                    textViews[currentLine].setTextColor(0xFF000000);
+                    textViews[currentLine].setTypeface(null, Typeface.BOLD);
+                    if (currentLine < textArray.length - 1){
+                        textViews[currentLine + 1].setTextColor(0xFFBCBCBC);
+                        textViews[currentLine + 1].setTypeface(null, Typeface.NORMAL);
+                    }
                     reader.speak(textArray[currentLine]);
                 } else if (currentLine == 0) {
                     reader.speak(textArray[0]);
@@ -106,6 +125,12 @@ public class RecipeActivity extends AppCompatActivity {
             if (matches.contains("next")||matches.contains("go on")) {
                 if (currentLine < textArray.length - 1) {
                     currentLine++;
+                    textViews[currentLine].setTextColor(0xFF000000);
+                    textViews[currentLine].setTypeface(null, Typeface.BOLD);
+                    if (currentLine >= 1){
+                        textViews[currentLine - 1].setTextColor(0xFFBCBCBC);
+                        textViews[currentLine - 1].setTypeface(null, Typeface.NORMAL);
+                    }
                     reader.speak(textArray[currentLine]);
                 } else {
                     reader.speak("You have finished cooking ");
@@ -113,6 +138,12 @@ public class RecipeActivity extends AppCompatActivity {
             }else if (matches.contains("last")||matches.contains("go back")){
                 if (currentLine > 0) {
                     currentLine--;
+                    textViews[currentLine].setTextColor(0xFF000000);
+                    textViews[currentLine].setTypeface(null, Typeface.BOLD);
+                    if (currentLine < textArray.length - 1){
+                        textViews[currentLine + 1].setTextColor(0xFFBCBCBC);
+                        textViews[currentLine + 1].setTypeface(null, Typeface.NORMAL);
+                    }
                     reader.speak(textArray[currentLine]);
                 } else if (currentLine == 0) {
                     reader.speak(textArray[0]);
