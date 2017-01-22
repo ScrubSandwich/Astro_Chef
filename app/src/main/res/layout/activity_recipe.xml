@@ -20,7 +20,8 @@
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingTop="@dimen/activity_vertical_margin"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:id="@+id/main_layout" >
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -50,22 +51,13 @@
             </LinearLayout>
 
             <TextView
-                android:text="@string/placeholder_ingredients"
+                android:text="RECIPE TITLE"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/recipe_ingredients"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"
-                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:paddingLeft="20dp"
-                android:lineSpacingExtra="4sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/recipe_data"
-                android:text="@string/placeholder_recipe"
-                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:id="@+id/recipe_title"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textAlignment="center"
+                android:textSize="24sp"
                 android:lineSpacingExtra="4sp" />
 
         </LinearLayout>
