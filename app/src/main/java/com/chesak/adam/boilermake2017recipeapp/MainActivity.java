@@ -2,13 +2,10 @@ package com.chesak.adam.boilermake2017recipeapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -25,12 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Camera request code
     private final static int CAMERA_RQ = 2017;
-    private final static int RESULT_LOAD_IMG_CODE = 1738;
     public static RecipeList recipeList = null;
     public static IO io = null;
     public Bitmap pic;
-
-    public String imageString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,19 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(resumeIntent);
             }
         });
-
-        //get picture from gallery
-        Button getPictureButton = (Button) findViewById(R.id.main_use_existing);
-        getPictureButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Create intent to Open Image applications like Gallery, Google Photos
-                Intent galleryIntent = new Intent(Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                // Start the Intent
-                startActivityForResult(galleryIntent, RESULT_LOAD_IMG_CODE);
-            }
-        });
     }
 
     @Override
@@ -118,89 +99,39 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Context context = getApplicationContext();
 
-        try{
-            // Image selected
-            if (requestCode == RESULT_LOAD_IMG_CODE) {
-                if (resultCode == RESULT_OK) {
-                    //tell the user how things are going
-                    Toast.makeText(this, "Getting text from image...",
-                            Toast.LENGTH_LONG).show();
+        // Received recording or error from MaterialCamera
+        if (requestCode == CAMERA_RQ) {
 
-                    Uri selectedImage = data.getData();
-                    String[] filePathColumn = {MediaStore.Images.Media.DATA};
+            if (resultCode == RESULT_OK) {
 
-                    Cursor cursor = getContentResolver().query(
-                            selectedImage, filePathColumn, null, null, null);
-                    cursor.moveToFirst();
+                // Load the bitmap
+                final File file = new File(data.getData().getPath());
+                Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
 
-                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                    String filePath = cursor.getString(columnIndex);
-                    cursor.close();
+                // OCR: get the text of the image
+                String text = OCR.getText(MainActivity.this, bitmap);
 
+                // Build a new recipe
+                //Recipe recipe = Recipe.parseRecipe(value);
+                Recipe recipe = Demo.getDemoRecipe(context, bitmap);
+                MainActivity.recipeList.add(recipe);
+                MainActivity.io.saveData(MainActivity.this);
 
-                    Bitmap bitmap = BitmapFactory.decodeFile(filePath);
+                // Go to the recipe screen
+                //Pass in the picked up text into that activity
+                Intent dataIntent = new Intent(MainActivity.this, RecipeActivity.class);
+                dataIntent.putExtra("recipe", recipe);
+                dataIntent.putExtra("text", text);
+                startActivity(dataIntent);
 
+            } else if (data != null) {
 
-
-
-                    //get the text of the image
-                    String text = OCR.getText(MainActivity.this, bitmap);
-
-                    // Build a new recipe
-                    //Recipe recipe = Recipe.parseRecipe(value);
-                    Recipe recipe = Demo.getDemoRecipe(context, bitmap);
-                    MainActivity.recipeList.add(recipe);
-                    MainActivity.io.saveData(MainActivity.this);
-
-                    // Go to the recipe screen
-                    //Pass in the picked up text into that activity
-                    Intent dataIntent = new Intent(MainActivity.this, RecipeActivity.class);
-                    dataIntent.putExtra("recipe", recipe);
-                    dataIntent.putExtra("text", text);
-                    startActivity(dataIntent);
-
-                }else {
-                        Toast.makeText(this, "Please select an image",
-                                Toast.LENGTH_LONG).show();
-                }
+                // Error here!
+                Exception e = (Exception) data.getSerializableExtra(MaterialCamera.ERROR_EXTRA);
+                e.printStackTrace();
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
             }
-
-
-
-            // Received recording or error from MaterialCamera
-            if  (requestCode == CAMERA_RQ) {
-                if (resultCode == RESULT_OK) {
-                    // Load the bitmap
-                    final File file = new File(data.getData().getPath());
-                    Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
-
-                    // OCR: get the text of the image
-                    String text = OCR.getText(MainActivity.this, bitmap);
-
-                    // Build a new recipe
-                    //Recipe recipe = Recipe.parseRecipe(value);
-                    Recipe recipe = Demo.getDemoRecipe(context, bitmap);
-                    MainActivity.recipeList.add(recipe);
-                    MainActivity.io.saveData(MainActivity.this);
-
-                    // Go to the recipe screen
-                    //Pass in the picked up text into that activity
-                    Intent dataIntent = new Intent(MainActivity.this, RecipeActivity.class);
-                    dataIntent.putExtra("recipe", recipe);
-                    dataIntent.putExtra("text", text);
-                    startActivity(dataIntent);
-
-                } else if (data != null) {
-
-                    // Error here! Ruh Roh...
-                    Exception e = (Exception) data.getSerializableExtra(MaterialCamera.ERROR_EXTRA);
-                    e.printStackTrace();
-                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
-                }
-            }
-        } catch (Exception e ){
-            Toast.makeText(this, "Error: " + e, Toast.LENGTH_LONG)
-                    .show();
         }
     }
+
 }
